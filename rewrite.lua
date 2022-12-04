@@ -1,6 +1,6 @@
 --[[
 
-    // Darkrooms [soft rewrite] v.1b2
+    // Darkrooms [soft rewrite] v.1b3
 
     ~ Thme your roblox however you want!
       - You may ask, why the hell did u re-write? I re-wrote because the original source kinda suck'd.
@@ -37,9 +37,7 @@ iffile("darkrooms/images/ColorableLogo.png", game:HttpGet("https://raw.githubuse
 iffile("darkrooms/images/ColorableIconBase.png", game:HttpGet("https://raw.githubusercontent.com/specowos/darkrooms/main/images/ColorableIconBase.png"))
 iffile("darkrooms/images/Moon.png", game:HttpGet("https://raw.githubusercontent.com/specowos/darkrooms/main/images/moon.png"))
 
-if not isfile("darkrooms/themes/defualt.lua") then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/specowos/darkrooms/main/writethemes.lua"))()
-end
+loadstring(game:HttpGet("https://raw.githubusercontent.com/specowos/darkrooms/main/writethemes.lua"))()
 
 iffile("darkrooms/lastused.lua", [[darkrooms/themes/defualt.lua]])
 
