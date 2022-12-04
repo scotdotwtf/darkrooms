@@ -38,7 +38,7 @@ iffile("darkrooms/images/ColorableIconBase.png", game:HttpGet("https://raw.githu
 iffile("darkrooms/images/Moon.png", game:HttpGet("https://raw.githubusercontent.com/specowos/darkrooms/main/images/moon.png"))
 
 if not isfile("darkrooms/themes/defualt.lua") then
-    loadstring("https://raw.githubusercontent.com/specowos/darkrooms/main/writethemes.lua")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/specowos/darkrooms/main/writethemes.lua"))()
 end
 
 iffile("darkrooms/lastused.lua", [[darkrooms/themes/defualt.lua]])
