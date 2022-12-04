@@ -1,6 +1,6 @@
 --[[
 
-    // Darkrooms [soft rewrite] v.1b
+    // Darkrooms [soft rewrite] v.1b2
 
     ~ Thme your roblox however you want!
       - You may ask, why the hell did u re-write? I re-wrote because the original source kinda suck'd.
@@ -44,7 +44,7 @@ end
 iffile("darkrooms/lastused.lua", [[darkrooms/themes/defualt.lua]])
 
 --// notif function
-local function notify(text)
+local function notify(text, bgcolor, textcolor)
     local notifgui = Instance.new("ScreenGui")
     notifgui.Name = "notifgui"
     notifgui.Parent = game:GetService("CoreGui")
@@ -54,11 +54,11 @@ local function notify(text)
     notif.Name = "notif"
     notif.FontFace = Font.fromEnum(Enum.Font.Gotham)
     notif.Text = text
-    notif.TextColor3 = Color3.fromHex("#FFFFFF")
+    notif.TextColor3 = textcolor
     notif.TextSize = 16
     notif.TextWrapped = true
     notif.AnchorPoint = Vector2.new(0.5, 0)
-    notif.BackgroundColor3 = Color3.fromHex("#729CFF")
+    notif.BackgroundColor3 = bgcolor
     notif.Position = UDim2.new(0.5, 0, 1, 200)
     notif.Size = UDim2.new(0, 100, 0, 35)
     
@@ -92,7 +92,7 @@ if game:GetService("CoreGui"):FindFirstChild("darkroom") then
     topbarframe.Visible = true
     game:GetService("CoreGui").PlayerList.Enabled = true
     game:GetService("CoreGui").darkroom:Destroy()
-    notify("refreshed!")
+    notify("refreshed!", Color3.fromHex("#729CFF"), Color3.fromHex("#FFFFFF"))
 end
 
 --// ui
@@ -280,7 +280,6 @@ local function addbutton(path)
     themename.Name = data.themedata.name
     themename.FontFace = Font.fromEnum(Enum.Font.GothamMedium)
     themename.Text = data.themedata.name
-    themename.TextColor3 = Color3.fromHex("#FFFFFF")
     themename.TextSize = 14
     themename.TextColor3 = data.themedata.text_color
     themename.BackgroundColor3 = data.themedata.bg_color
@@ -308,7 +307,7 @@ local function addbutton(path)
         theme(path)
         writefile("darkrooms/lastused.lua", path)
 
-        notify("applied!")
+        notify("applied!", data.themedata.bg_color, data.themedata.text_color)
     end)
 end
 

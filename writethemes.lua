@@ -178,7 +178,7 @@ local props = {
         ["icon"] = getasset("darkrooms/images/ColorableLogo.png"), --// getasset("darkrooms/images/ColorableLogo.png") / "robloxid"
         ["background"] = colorable, --// colorable / "robloxid"
         
-        ["icon_color"] = Color3.fromHex("#fcecba"),
+        ["icon_color"] = Color3.fromHex("#FB904B"),
         ["bg_color"] = Color3.fromHex("#8860e0"),
         
         ["bg_transparency"] = 0
@@ -188,7 +188,7 @@ local props = {
         ["icon"] = "rbxasset://textures/ui/TopBar/chatOn.png", --// "rbxasset://textures/ui/TopBar/chatOn.png" / "robloxid"
         ["background"] = colorable, --// colorable / "robloxid"
         
-        ["icon_color"] = Color3.fromHex("#fcecba"),
+        ["icon_color"] = Color3.fromHex("#FB904B"),
         ["bg_color"] = Color3.fromHex("#8860e0"),
         
         ["bg_transparency"] = 0
@@ -198,7 +198,7 @@ local props = {
         ["icon"] = getasset("darkrooms/images/Moon.png"), --// getasset("darkrooms/images/Moon.png") / "robloxid"
         ["background"] = colorable, --// colorable / "robloxid"
         
-        ["icon_color"] = Color3.fromHex("#fcecba"),
+        ["icon_color"] = Color3.fromHex("#FB904B"),
         ["bg_color"] = Color3.fromHex("#8860e0"),
         
         ["bg_transparency"] = 0
@@ -208,9 +208,64 @@ local props = {
         ["icon"] = "rbxasset://textures/ui/TopBar/moreOff.png", --// "rbxasset://textures/ui/TopBar/moreOff.png" / "robloxid"
         ["background"] = colorable, --// colorable / "robloxid"
         
-        ["icon_color"] = Color3.fromHex("#fcecba"),
+        ["icon_color"] = Color3.fromHex("#FB904B"),
         ["bg_color"] = Color3.fromHex("#8860e0"),
         
+        ["bg_transparency"] = 0
+    }
+}
+
+return props
+]])
+
+writefile("darkrooms/themes/discord.lua", [[
+local getasset = getsynasset or getcustomasset
+local colorable = getasset("darkrooms/images/ColorableIconBase.png")
+
+local props = {
+    ["themedata"] = {
+        ["name"] = "discord",
+        ["text_color"] = Color3.fromHex("#7289DA"),
+        ["bg_color"] = Color3.fromHex("#36393E")
+    },
+
+    ["rbx_ico"] = {
+        ["icon"] = getasset("darkrooms/images/ColorableLogo.png"), --// getasset("darkrooms/images/ColorableLogo.png") / "robloxid"
+        ["background"] = colorable, --// colorable / "robloxid"
+
+        ["icon_color"] = Color3.fromHex("#36393E"),
+        ["bg_color"] = Color3.fromHex("#7289DA"),
+
+        ["bg_transparency"] = 0
+    },
+
+    ["chat_ico"] = {
+        ["icon"] = "rbxasset://textures/ui/TopBar/chatOn.png", --// "rbxasset://textures/ui/TopBar/chatOn.png" / "robloxid"
+        ["background"] = colorable, --// colorable / "robloxid"
+
+        ["icon_color"] = Color3.fromHex("#36393E"),
+        ["bg_color"] = Color3.fromHex("#7289DA"),
+
+        ["bg_transparency"] = 0
+    },
+
+    ["dark_ico"] = {
+        ["icon"] = getasset("darkrooms/images/Moon.png"), --// getasset("darkrooms/images/Moon.png") / "robloxid"
+        ["background"] = colorable, --// colorable / "robloxid"
+
+        ["icon_color"] = Color3.fromHex("#36393E"),
+        ["bg_color"] = Color3.fromHex("#7289DA"),
+
+        ["bg_transparency"] = 0
+    },
+
+    ["other_ico"] = {
+        ["icon"] = "rbxasset://textures/ui/TopBar/moreOff.png", --// "rbxasset://textures/ui/TopBar/moreOff.png" / "robloxid"
+        ["background"] = colorable, --// colorable / "robloxid"
+
+        ["icon_color"] = Color3.fromHex("#36393E"),
+        ["bg_color"] = Color3.fromHex("#7289DA"),
+
         ["bg_transparency"] = 0
     }
 }
