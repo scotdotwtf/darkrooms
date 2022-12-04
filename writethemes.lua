@@ -218,6 +218,61 @@ local props = {
 return props
 ]])
 
+writefile("darkrooms/themes/christmas.lua", [[
+local getasset = getsynasset or getcustomasset
+local colorable = getasset("darkrooms/images/ColorableIconBase.png")
+
+local props = {
+    ["themedata"] = {
+        ["name"] = "christmas",
+        ["text_color"] = Color3.fromRGB(255, 255, 255),
+        ["bg_color"] = Color3.fromHex("#f93e3e")
+    },
+
+    ["rbx_ico"] = {
+        ["icon"] = getasset("darkrooms/images/ColorableLogo.png"), --// getasset("darkrooms/images/ColorableLogo.png") / "robloxid"
+        ["background"] = colorable, --// colorable / "robloxid"
+        
+        ["icon_color"] = Color3.fromRGB(255, 255, 255),
+        ["bg_color"] = Color3.fromHex("#f93e3e"),
+        
+        ["bg_transparency"] = 0
+    },
+
+    ["chat_ico"] = {
+        ["icon"] = "rbxasset://textures/ui/TopBar/chatOn.png", --// "rbxasset://textures/ui/TopBar/chatOn.png" / "robloxid"
+        ["background"] = colorable, --// colorable / "robloxid"
+        
+        ["icon_color"] = Color3.fromRGB(255, 255, 255),
+        ["bg_color"] = Color3.fromHex("4dd14b"),
+        
+        ["bg_transparency"] = 0
+    },
+
+    ["dark_ico"] = {
+        ["icon"] = getasset("darkrooms/images/Moon.png"), --// getasset("darkrooms/images/Moon.png") / "robloxid"
+        ["background"] = colorable, --// colorable / "robloxid"
+        
+        ["icon_color"] = Color3.fromRGB(255, 255, 255),
+        ["bg_color"] = Color3.fromHex("#f93e3e"),
+        
+        ["bg_transparency"] = 0
+    },
+
+    ["other_ico"] = {
+        ["icon"] = "rbxasset://textures/ui/TopBar/moreOff.png", --// "rbxasset://textures/ui/TopBar/moreOff.png" / "robloxid"
+        ["background"] = colorable, --// colorable / "robloxid"
+        
+        ["icon_color"] = Color3.fromRGB(255, 255, 255),
+        ["bg_color"] = Color3.fromHex("4dd14b"),
+        
+        ["bg_transparency"] = 0
+    }
+}
+
+return props
+]])
+
 writefile("darkrooms/themes/discord.lua", [[
 local getasset = getsynasset or getcustomasset
 local colorable = getasset("darkrooms/images/ColorableIconBase.png")
