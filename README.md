@@ -25,6 +25,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/specowos/darkrooms/ma
 ### Theme guide
 #### Themeing is quite easy but looks pretty big.
 
+#### Refresh themes
+##### to refresh your themes go to `darkrooms/themes` and delete `defualt.lua`
+##### this will cause the script to redownload all themes from `writethemes`
+
 #### Things to know
 - ##### Themedata is just what shows up in the presets menu. It wont effect the topbar or anything like that. 
 - ##### The backgrounds of icons are white by defualt, so to make it black you have to set the icons `bg_color` to black (`Color3.fromRGB(0, 0, 0) or Color3.fromHex("#000000"`) 
