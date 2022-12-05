@@ -314,5 +314,8 @@ for i, v in pairs(listfiles("darkrooms/themes")) do
     addbutton(v)
 end
 
+--// extra wait just so themes can download
+wait(0.5)
+
 --// load last used
 theme(readfile("darkrooms/lastused.lua"))
