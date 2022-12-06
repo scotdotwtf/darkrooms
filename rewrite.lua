@@ -10,9 +10,7 @@
 ]]
 
 --// wait for game to load *for autoexc*
-if not game:IsLoaded() then
-    repeat wait() until game:IsLoaded() 
-end
+game.Loaded:Wait()
 
 --// custom assets
 local getasset = getcustomasset or getsynasset
