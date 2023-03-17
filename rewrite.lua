@@ -5,7 +5,7 @@
     ~ Thme your roblox however you want!
       - You may ask, why the hell did u re-write? I re-wrote because the original source kinda suck'd.
 
-    Theme guide at: https://github.com/specowos/darkrooms
+    Theme guide at: https://github.com/scotdotwtf/darkrooms
 
 ]]
 
@@ -31,11 +31,11 @@ iffolder("darkrooms")
 iffolder("darkrooms/images")
 iffolder("darkrooms/themes")
 
-iffile("darkrooms/images/ColorableLogo.png", game:HttpGet("https://raw.githubusercontent.com/specowos/darkrooms/main/images/ColorableLogo.png"))
-iffile("darkrooms/images/ColorableIconBase.png", game:HttpGet("https://raw.githubusercontent.com/specowos/darkrooms/main/images/ColorableIconBase.png"))
-iffile("darkrooms/images/Moon.png", game:HttpGet("https://raw.githubusercontent.com/specowos/darkrooms/main/images/moon.png"))
+iffile("darkrooms/images/ColorableLogo.png", game:HttpGet("https://raw.githubusercontent.com/scotdotwtf/darkrooms/main/images/ColorableLogo.png"))
+iffile("darkrooms/images/ColorableIconBase.png", game:HttpGet("https://raw.githubusercontent.com/scotdotwtf/darkrooms/main/images/ColorableIconBase.png"))
+iffile("darkrooms/images/Moon.png", game:HttpGet("https://raw.githubusercontent.com/scotdotwtf/darkrooms/main/images/moon.png"))
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/specowos/darkrooms/main/writethemes.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/scotdotwtf/darkrooms/main/writethemes.lua"))()
 
 iffile("darkrooms/lastused.lua", [[darkrooms/themes/defualt.lua]])
 
