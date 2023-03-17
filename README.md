@@ -2,7 +2,7 @@
 ## Customize and theme roblox's topbar buttons.
 
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/specowos/darkrooms/main/rewrite.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/scotdotwtf/darkrooms/main/rewrite.lua"))()
 ```
 
 ### Description
