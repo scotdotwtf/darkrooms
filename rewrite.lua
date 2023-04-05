@@ -10,7 +10,9 @@
 ]]
 
 --// wait for game to load *for autoexc*
-game.Loaded:Wait()
+if not game:IsLoaded() then
+    repeat wait() until game:IsLoaded() 
+end
 
 --// custom assets
 local getasset = getcustomasset or getsynasset
@@ -73,7 +75,7 @@ local function notify(text, bgcolor, textcolor)
 end
 
 --// quick vars
-local topbarframe = game:GetService("CoreGui").ThemeProvider.TopBarFrame
+local topbarframe = game:GetService("CoreGui").TopBarApp.TopBarFrame
 local menubtn = topbarframe.LeftFrame.MenuIcon
 local chatbtn = topbarframe.LeftFrame.ChatIcon
 local otherbtn = topbarframe.RightFrame.MoreMenu
